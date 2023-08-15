@@ -3,7 +3,7 @@ import bubble from "./sprite.js";
 const board = document.getElementById("board");
 const ctx = board.getContext("2d");
 let bubbles = [];
-let bump = new Audio('/.stone.mp3');
+
 
 
 function setup(){
