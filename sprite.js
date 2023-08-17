@@ -8,11 +8,11 @@ export class base{
         this.color = 'rgb('+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+')';
         this.sound = new Audio("");
     }
-    randommovement(){
-        this.x += (Math.round(Math.random()*15));
-        this.x -= (Math.round(Math.random()*15));
-        this.y += (Math.round(Math.random()*15));
-        this.y -= (Math.round(Math.random()*15));
+    randommovement(speed){
+        this.x += (Math.round(Math.random()*speed));
+        this.x -= (Math.round(Math.random()*speed));
+        this.y += (Math.round(Math.random()*speed));
+        this.y -= (Math.round(Math.random()*speed));
     }
     draw(ctx){
         ctx.strokeStyle ="white";
@@ -65,11 +65,11 @@ export class gamepiece{
             if(this.piece == 'paper' && other.piece == 'rock'){other.piece = 'paper'; other.pieceatt(); this.sound.play();};
         }
     }
-    randommovement(){
-        this.x += (Math.round(Math.random()*30));
-        this.x -= (Math.round(Math.random()*30));
-        this.y += (Math.round(Math.random()*30));
-        this.y -= (Math.round(Math.random()*30));
+    randommovement(speed){
+        this.x += (Math.round(Math.random()*speed));
+        this.x -= (Math.round(Math.random()*speed));
+        this.y += (Math.round(Math.random()*speed));
+        this.y -= (Math.round(Math.random()*speed));
     }
     convert(other){other.piece = this.piece; other.pieceatt();};
     edge(board){

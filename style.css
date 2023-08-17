@@ -1,3 +1,6 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -11,27 +14,45 @@ body {
 #board{
     border:1vh dashed purple;
 }
-#start{
-    height:10vh;
-    width: 20vw;
-}
-#btncontainer{
 
+#btncontainer{
+    position: absolute;
+    display: grid;
+    grid-template-columns:[first]33.33%[two]33.33%[three]33.33%[end];
+    grid-template-rows:[first]50%[two]20%[three]30%[end];
+    text-align: center;
+    font-size: 1.5em;
 }
 #start, #startnum, #startnum2,#startspd{
-
+    margin:10px;
 }
 #startnum,#startnum2,#startspd{
     min-height: 40px;
     min-width: 60px;
     height: 6vh;
     width: 6vw;
+    text-align: center;
+    font-size: 1.8em;
 
 }
+#start{
+    grid-column: first/end;
+    grid-row: first/two;
+}
+#txnum{grid-column: first/two; grid-row: two/three; align-self: center;}
+#txnum2{grid-column: two/three; grid-row: two/three; align-self: center;}
+#txspd{grid-column: three/end; grid-row: two/three; align-self: center;}
 #startnum{
+    grid-column: first/two;
+    grid-row: three/end;
 }
 #startnum2{
+    grid-column: two/three;
+    grid-row: three/end;
+
 }
 #startspd{
+    grid-column: three/end;
+    grid-row: three/end;
 
 }
