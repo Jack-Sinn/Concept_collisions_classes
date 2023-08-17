@@ -1,4 +1,4 @@
-
+/*
 const assetimg = [
     './rock.png',
     './scissor.png',
@@ -27,4 +27,4 @@ function soundloader(){
     })}
 imageloader();
 soundloader();
-console.log(body);
+console.log(body);*/

@@ -7,8 +7,20 @@
     <link rel="stylesheet" href="style.css" />
     <script src="./gamefiles_import.js"></script>
   </head>
-  <body>
-    <!-- <canvas id="board" width="800" height="1000"></canvas>
-    <script type="module" src="script.js"></script>-->
+  <body id="body">
+    <div id="btncontainer">
+      <button id="start"></button>
+      <input type="number" name="" id="startnum" value="10" />
+      <input type="number" name="" id="startnum2" value="10" />
+      <input type="number" name="" id="startspd" value="10" />
+    </div>
+    <script src="./start.js"></script>
+    <canvas id="board"></canvas>
+    <style>
+      #board {
+        width: 90vw;
+        height: 90vh;
+      }
+    </style>
   </body>
 </html>

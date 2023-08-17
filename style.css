@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
     height: 100vh;
@@ -9,4 +10,28 @@ body {
   }
 #board{
     border:1vh dashed purple;
+}
+#start{
+    height:10vh;
+    width: 20vw;
+}
+#btncontainer{
+
+}
+#start, #startnum, #startnum2,#startspd{
+
+}
+#startnum,#startnum2,#startspd{
+    min-height: 40px;
+    min-width: 60px;
+    height: 6vh;
+    width: 6vw;
+
+}
+#startnum{
+}
+#startnum2{
+}
+#startspd{
+
 }
